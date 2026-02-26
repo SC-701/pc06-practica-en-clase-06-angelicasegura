@@ -12,7 +12,7 @@ namespace Reglas
         }
         public string ObtenerMetodo(string seccion, string nombre)
         {
-            
+            throw new NotImplementedException();
         }
 
         public string ObtenerValor(string llave)
