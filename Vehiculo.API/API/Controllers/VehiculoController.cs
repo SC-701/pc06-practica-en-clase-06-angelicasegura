@@ -54,7 +54,7 @@ namespace API.Controllers
         }
         [HttpGet ("{Id}")]
        
-        public async Task<IActionResult> Obtener([FromHeader] Guid Id)
+        public async Task<IActionResult> Obtener([FromRoute] Guid Id)
         {
             var resultado = await _vehiculoFlujo.Obtener(Id);
             return Ok(resultado);
